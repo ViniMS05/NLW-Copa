@@ -20,7 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #e1e1e6;
 
-  background: url(./assets/bg-overlay.png) #121214 no-repeat top center/cover;
+  background: url(./assets/bg-yellow.png) #121214 no-repeat top center/cover;
 }
 
 #app {
