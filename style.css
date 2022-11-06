@@ -20,7 +20,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: #e1e1e6;
 
-  background: url(./assets/bg-yellow.png) #121214 no-repeat top center/cover;
+  background: url(./assets/bg-yellow.png) #121214 no-repeat;
+  background-size: contain;
 }
 
 #app {
@@ -45,13 +46,12 @@ header h1 {
   font-weight: 700;
 }
 
-main {
-  display: flex;
+#cards {
+  display: grid;
   gap: 3.2rem;
-  justify-content: center;
-  align-items: center;
-
-  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: 1fr 1fr;
 }
 
 .card {
@@ -164,8 +164,13 @@ main {
   }
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   #cards {
-    max-width: 700px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 2000px) {
+  body {
+    background-size: cover;
   }
 }
